@@ -9,28 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var inputedNumberArray: [UITextField]!
-    @IBOutlet weak var calculatedNumberLabel: UILabel!
+    @IBOutlet private var inputedNumberTextFields: [UITextField]!
+    @IBOutlet private weak var calculatedNumberLabel: UILabel!
     
     @IBAction func calculateButton(_ sender: UIButton) {
 
-        let resultNumber = inputedNumberArray
-            .map { Int($0.text!) ?? 0 }
+        let resultNumber = inputedNumberTextFields
+            .compactMap { Int($0.text!) }
             .reduce(0, +)
         calculatedNumberLabel.text = "\(resultNumber)"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        for textField in inputedNumberArray {
-            textField.delegate = self
-            textField.keyboardType = UIKeyboardType.numberPad
+
+        inputedNumberTextFields.forEach {
+            $0.delegate = self
+            $0.keyboardType = .numberPad
         }
     }
 }
 
-extension ViewController: UITextFieldDelegate {
-    
-}
+extension ViewController: UITextFieldDelegate {}

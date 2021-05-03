@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -81,11 +81,11 @@
                     </view>
                     <connections>
                         <outlet property="calculatedNumberLabel" destination="MQK-tN-BRR" id="BGO-hM-heB"/>
-                        <outletCollection property="inputedNumberArray" destination="GyN-sd-3k6" collectionClass="NSMutableArray" id="bBO-t2-bOq"/>
-                        <outletCollection property="inputedNumberArray" destination="bzX-1X-FIH" collectionClass="NSMutableArray" id="g5s-PB-nNK"/>
-                        <outletCollection property="inputedNumberArray" destination="Wb5-vW-vMj" collectionClass="NSMutableArray" id="7t9-gl-Ooc"/>
-                        <outletCollection property="inputedNumberArray" destination="oPI-vX-OCP" collectionClass="NSMutableArray" id="CFh-YZ-rzb"/>
-                        <outletCollection property="inputedNumberArray" destination="tZ6-Bf-0Qk" collectionClass="NSMutableArray" id="PC3-nK-tck"/>
+                        <outletCollection property="inputedNumberTextFields" destination="GyN-sd-3k6" collectionClass="NSMutableArray" id="g5B-2F-ZqU"/>
+                        <outletCollection property="inputedNumberTextFields" destination="bzX-1X-FIH" collectionClass="NSMutableArray" id="pAV-jy-Bhj"/>
+                        <outletCollection property="inputedNumberTextFields" destination="Wb5-vW-vMj" collectionClass="NSMutableArray" id="aqV-EU-pA9"/>
+                        <outletCollection property="inputedNumberTextFields" destination="oPI-vX-OCP" collectionClass="NSMutableArray" id="gKV-gv-mSd"/>
+                        <outletCollection property="inputedNumberTextFields" destination="tZ6-Bf-0Qk" collectionClass="NSMutableArray" id="FdG-tg-hQI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
